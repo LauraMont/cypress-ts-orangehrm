@@ -1,0 +1,16 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"strict": true,
+		"target": "es5",
+		"lib": ["es5", "dom"],
+		"types": ["cypress", "node", "cypress-plugin-api"],
+		"paths": {
+			"@pages/*": ["./cypress/support/pages/*"],
+			"@fixture/*": ["./cypress/fixtures/data/*"],
+			"@util/*": ["./cypress/support/utils/*"]
+		}
+	},
+	"exclude": ["node_modules"],
+	"include": ["**/*.ts", "cypress.d.ts"]
+}
